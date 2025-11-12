@@ -1,13 +1,14 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  namespace: abhishek-argocd
-  name: nginx-pod
+  namespace: nginx-argocd
+  name: nginx-pod-argocd
   labels:
     app: todo-app
 spec:
   containers:
-  - name: nginx-container
+  - name: nginx-container-argocd
     image: nginx
     ports:
       - containerPort: 80
+
