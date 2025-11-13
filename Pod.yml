@@ -5,10 +5,13 @@ metadata:
   name: nginx-pod-argocd
   labels:
     app: todo-app
+    app1: todo-app
+    app2: todo-app
 spec:
   containers:
   - name: nginx-container-argocd
     image: nginx
     ports:
       - containerPort: 80
+
 
